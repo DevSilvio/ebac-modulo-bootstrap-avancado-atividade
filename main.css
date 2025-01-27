@@ -1,0 +1,26 @@
+nav .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+div .img1 {
+    height: 500px;
+    width: auto;
+    background-color: #000;
+}
+
+div .img2 {
+    height: 500px;
+    width: auto;
+    background-color: #dfa125;
+}

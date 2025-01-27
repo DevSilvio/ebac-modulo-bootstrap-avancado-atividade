@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Bootstrap Avançado</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Bootstrap Atividade</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Atividade</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carouselBootstrap" class="carousel slide carousel-fade mt-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <div class="img1"></div>
+                    <div class="carousel-caption">
+                        Atividade Bootstrap
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <div class="img2"></div>
+                    <div class="carousel-caption">
+                        Atividade Bootstrap
+                    </div>
+                </div>
+            </div>
+            <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide-to="1"></button>
+            </div>
+        </div>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Atividade
+                        </div>
+                        <div class="img1 h-6"></div>
+                        <div class="card-body">
+                            <h4 class="card-title"> atividade Bootstrap</h4>
+                            <h5 class="card-subtitle">Esta é uma atividade do bootstrap do curso ebac</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores obcaecati deleniti possimus in.
+                            </p>
+                            <a href="#" class="btn btn-primary">Veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

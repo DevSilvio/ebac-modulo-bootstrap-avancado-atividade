@@ -8,74 +8,243 @@
     <link rel="stylesheet" href="lib/bootstrap.min.css">
 </head>
 <body>
-    <header class="cabecalho">
+    <header class="fixed-top" id="cabecalho">
         <div class="navbar navbar-expand-lg">
             <div class="container">
                 <h1>Bootstrap Atividade</h1>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Início</a>
+                            <a href="#inicio" class="nav-link active">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Atividade</a>
+                            <a href="#atividade" class="nav-link">Atividade</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="container">
-        <div id="carouselBootstrap" class="carousel slide carousel-fade mt-2" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div data-bs-interval="3000" class="carousel-item active">
-                    <div class="img1"></div>
-                    <div class="carousel-caption">
-                        Atividade Bootstrap
+    <main>
+        <div class="container">
+            <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+                <section id="inicio">
+                    <div id="carouselBootstrap" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div data-bs-interval="3000" class="carousel-item active">
+                                <div class="img1"></div>
+                                <div class="carousel-caption">
+                                    Atividade Bootstrap
+                                </div>
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item">
+                                <div class="img2"></div>
+                                <div class="carousel-caption">
+                                    Atividade Bootstrap
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide="prev" class="carousel-control-prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide="next" class="carousel-control-next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide-to="1"></button>
+                        </div>
                     </div>
-                </div>
-                <div data-bs-interval="3000" class="carousel-item">
-                    <div class="img2"></div>
-                    <div class="carousel-caption">
-                        Atividade Bootstrap
+                </section>
+                <section id="atividade">
+                    <h2>Atividade</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    Atividade
+                                </div>
+                                <div id="cardBootstrap1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div data-bs-interval="3000" class="carousel-item active">
+                                            <div class="imgCard1"></div>
+                                            <div class="carousel-caption">
+                                                Atividade Bootstrap
+                                            </div>
+                                        </div>
+                                        <div data-bs-interval="3000" class="carousel-item">
+                                            <div class="imgCard2"></div>
+                                            <div class="carousel-caption">
+                                                Atividade Bootstrap
+                                            </div>
+                                        </div>
+                                        <button type="button" data-bs-target="#cardBootstrap1" data-bs-slide="prev" class="carousel-control-prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button type="button" data-bs-target="#cardBootstrap1" data-bs-slide="next" class="carousel-control-next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#cardBootstrap1" data-bs-slide-to="0" class="active"></button>
+                                            <button type="button" data-bs-target="#cardBootstrap1" data-bs-slide-to="1"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"> atividade Bootstrap</h4>
+                                    <h5 class="card-subtitle">Esta é uma atividade do bootstrap do curso ebac</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores obcaecati deleniti possimus in.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    Atividade
+                                </div>
+                                <div id="cardBootstrap2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div data-bs-interval="3000" class="carousel-item active">
+                                            <div class="imgCard1"></div>
+                                            <div class="carousel-caption">
+                                                Atividade Bootstrap
+                                            </div>
+                                        </div>
+                                        <div data-bs-interval="3000" class="carousel-item">
+                                            <div class="imgCard2"></div>
+                                            <div class="carousel-caption">
+                                                Atividade Bootstrap
+                                            </div>
+                                        </div>
+                                        <button type="button" data-bs-target="#cardBootstrap2" data-bs-slide="prev" class="carousel-control-prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button type="button" data-bs-target="#cardBootstrap2" data-bs-slide="next" class="carousel-control-next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#cardBootstrap2" data-bs-slide-to="0" class="active"></button>
+                                            <button type="button" data-bs-target="#cardBootstrap2" data-bs-slide-to="1"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"> atividade Bootstrap</h4>
+                                    <h5 class="card-subtitle">Esta é uma atividade do bootstrap do curso ebac</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores obcaecati deleniti possimus in.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    Atividade
+                                </div>
+                                <div id="cardBootstrap3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div data-bs-interval="3000" class="carousel-item active">
+                                            <div class="imgCard1"></div>
+                                            <div class="carousel-caption">
+                                                Atividade Bootstrap
+                                            </div>
+                                        </div>
+                                        <div data-bs-interval="3000" class="carousel-item">
+                                            <div class="imgCard2"></div>
+                                            <div class="carousel-caption">
+                                                Atividade Bootstrap
+                                            </div>
+                                        </div>
+                                        <button type="button" data-bs-target="#cardBootstrap3" data-bs-slide="prev" class="carousel-control-prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button type="button" data-bs-target="#cardBootstrap3" data-bs-slide="next" class="carousel-control-next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#cardBootstrap3" data-bs-slide-to="0" class="active"></button>
+                                            <button type="button" data-bs-target="#cardBootstrap3" data-bs-slide-to="1"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"> atividade Bootstrap</h4>
+                                    <h5 class="card-subtitle">Esta é uma atividade do bootstrap do curso ebac</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores obcaecati deleniti possimus in.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    Atividade
+                                </div>
+                                <div id="cardBootstrap4" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div data-bs-interval="3000" class="carousel-item active">
+                                            <div class="imgCard1"></div>
+                                            <div class="carousel-caption">
+                                                Atividade Bootstrap
+                                            </div>
+                                        </div>
+                                        <div data-bs-interval="3000" class="carousel-item">
+                                            <div class="imgCard2"></div>
+                                            <div class="carousel-caption">
+                                                Atividade Bootstrap
+                                            </div>
+                                        </div>
+                                        <button type="button" data-bs-target="#cardBootstrap4" data-bs-slide="prev" class="carousel-control-prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button type="button" data-bs-target="#cardBootstrap4" data-bs-slide="next" class="carousel-control-next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#cardBootstrap4" data-bs-slide-to="0" class="active"></button>
+                                            <button type="button" data-bs-target="#cardBootstrap4" data-bs-slide-to="1"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"> atividade Bootstrap</h4>
+                                    <h5 class="card-subtitle">Esta é uma atividade do bootstrap do curso ebac</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores obcaecati deleniti possimus in.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide="prev" class="carousel-control-prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide="next" class="carousel-control-next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#carouselBootstrap" data-bs-slide-to="1"></button>
+                </section>
             </div>
         </div>
-        <section class="mt-5">
-            <div class="row">
-                <div class="col-4">
-                    <div class="card text-bg-dark">
-                        <div class="card-header">
-                            Atividade
-                        </div>
-                        <div class="img1 h-6"></div>
-                        <div class="card-body">
-                            <h4 class="card-title"> atividade Bootstrap</h4>
-                            <h5 class="card-subtitle">Esta é uma atividade do bootstrap do curso ebac</h5>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores obcaecati deleniti possimus in.
-                            </p>
-                            <a href="#" class="btn btn-primary">Veja mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="lib/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).click(function(e){
+                var target = $(e.target);
+                var menuOpen = $('#menu').hasClass('show');
+                var menuClick = target.closest('#menu').length > 0;
+                var menuButton = target.closest('.navbar-toggler').length > 0;
+                if(menuOpen && !menuClick && !menuButton) {
+                    $('#menu').collapse('hide');
+                }
+            })
+        })
+    </script>
 </body>
 </html>

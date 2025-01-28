@@ -24,3 +24,19 @@ div .img2 {
     width: auto;
     background-color: #dfa125;
 }
+
+.imgCard1 {
+    height: 250px;
+    width: auto;
+    background-color: #000;
+}
+
+.imgCard2 {
+    height: 250px;
+    width: auto;
+    background-color: #dfa125;
+}
+
+section {
+    padding-top: 72px;
+}
